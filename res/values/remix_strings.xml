@@ -93,4 +93,7 @@
 
     <!-- Lineage maintainer -->
     <string name="maintainer">Maintainer</string>
+
+    <!-- About device -->
+    <string name="about_device_name">Device</string>
 </resources>
