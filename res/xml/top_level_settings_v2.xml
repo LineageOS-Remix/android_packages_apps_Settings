@@ -24,7 +24,7 @@
         android:order="-140"
         android:key="top_level_lineage_category"
         android:layout="@layout/settingslib_preference_category_no_title">
-        <com.android.settings.widget.HomepagePreference
+        <com.android.settings.widget.AboutDeviceHomepagePreference
             android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
             android:icon="@drawable/ic_settings_about_device_filled"
             android:key="top_level_about_device"
