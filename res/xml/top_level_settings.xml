@@ -20,6 +20,21 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="top_level_settings">
 
+    <PreferenceCategory
+        android:order="-140"
+        android:key="top_level_lineage_category"
+        android:layout="@layout/settingslib_preference_category_no_title">
+    <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
+        android:icon="@drawable/ic_settings_about_device"
+        android:key="top_level_about_device"
+        android:order="20"
+        android:title="@string/about_settings"
+        android:summary="@string/summary_placeholder"
+        settings:highlightableMenuKey="@string/menu_key_about_device"
+        settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
+    </PreferenceCategory>
+
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/ic_settings_wireless"
@@ -204,16 +219,6 @@
         android:title="@string/header_category_system"
         android:summary="@string/system_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_system"/>
-
-    <com.android.settings.widget.HomepagePreference
-        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
-        android:icon="@drawable/ic_settings_about_device"
-        android:key="top_level_about_device"
-        android:order="20"
-        android:title="@string/about_settings"
-        android:summary="@string/summary_placeholder"
-        settings:highlightableMenuKey="@string/menu_key_about_device"
-        settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
         android:icon="@drawable/ic_help"
